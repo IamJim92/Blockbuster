@@ -1,16 +1,16 @@
 class GamesController < ApplicationController
-  before_action :authenticate_user!, :set_games, only: [:show, :create, :destroy]
+  before_action :authenticate_user!, :set_games, only: %i[show create destroy]
 
   def index
     @games = Game.all
   end
 
-  # def show
-  # end
+  def show
+  end
 
-  # def new
-  #   @game = Game.new
-  # end
+  def new
+    @game = Game.new
+  end
 
   def create
     @game = Game.new(game_params)
