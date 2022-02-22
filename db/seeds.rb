@@ -22,7 +22,8 @@ user = User.new(email: "rodney@hotmail.com", password: "123123")
     user: user,
     name: "My Game #{i}",
     description: "Game description is pretty cool man!",
-    price: 200
+    price: 200,
+    genre: "horror"
   )
 end
 

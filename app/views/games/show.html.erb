@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="game-card container d-flex justify-content-center">
+    <div class="card card-show w-75 " style="width: 18rem;">
+      <img class="card-img-top" src="/assets/games.jpg" alt="Card image cap">
+  </div>
+</div>
+
+<div class="container game-info w-75 d-flex justify-content-flex-start">
+  <h1><%= @games.name %></h1>
+  <h4><%= @games.description %></h4>
+  <h6>Genre: <%= @games.genre %></h6>
+  <h6>Price: £<%= @games.price %></h6>
+  <a href="#" class="btn btn-primary">Buy now</a>
+  <div class="back-btn">
+  <p><%= link_to "back", games_path %></p>
+  </div>
+</div>
