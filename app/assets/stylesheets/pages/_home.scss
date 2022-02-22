@@ -1,1 +1,50 @@
 // Specific CSS for your home-page
+body {
+  background-color: #1c3041;
+}
+
+.title {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header2 {
+  color: #8db0ce;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headers {
+  margin-top: 200px;
+}
+
+.banner {
+  height: 10x;
+  width: 100%;
+  background-image: url(games.jpg);
+  margin-top: -25px;
+  border: 2px solid black;
+}
+img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sub-header {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.card {
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 420px;
+  padding-left: 1px;
+}
