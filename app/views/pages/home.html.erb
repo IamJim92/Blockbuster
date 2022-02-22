@@ -1,2 +1,31 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1 class="text-center title">Blockbuster</h1>
+
+  <div class="headers">
+    <h2 class="text-center header1">What games do you</h2>
+    <h2 class="text-center header2">want to buy?</h2>
+  </div>
+
+  <div class="container d-flex justify-content-center">
+    <div class="search w-25">
+      <%= render 'shared/search_form' %>
+    </div>
+  </div>
+
+  <div class="banner container d-flex justify-content-center">
+    <img src="/assets/games.jpg" alt="">
+  </div>
+
+  <div class="sub-header"><h2>Top Games</h2></div>
+
+  <div class="container">
+    <%= render 'shared/cards(3)' %>
+  </div>
+
+
+</div>
+
+<br>
+<br>
+<br>
+<%# strategy shooter multiplayer simulation sports puzzlers adventure survival horror %>
