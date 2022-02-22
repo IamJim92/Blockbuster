@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# games = Game.create(
+#   name: "Gears of War",
+#   description: "Really cool game that James likes",
+#   price: 100
+# )
+
+puts "Cleaning up database..."
+Game.destroy_all
+puts "Database cleaned"
+
+user = User.new(email: "rodney@hotmail.com", password: "123123")
+10.times do |i|
+  Game.create!(
+    user: user,
+    name: "My Game #{i}",
+    description: "Game description is pretty cool man!",
+    price: 200
+  )
+end
+
+puts "Games created"
