@@ -6,17 +6,24 @@
 
 <div class="container py-5">
   <div class="d-flex align-items-center justify-content-between mb-3">
-    <h3 class="mb-0">My Games</h3>
+    <h3 class="mb-0" style="color:white">View inventory of games</h3>
     <%= link_to "Create a new game", new_game_path, class: "btn btn-flat" %>
   </div>
   <div class="row">
     <% @games.each do |game| %>
       <div class="co-12 col-sm-6 col-md-4">
         <%= link_to game_path(game), class: "text-decoration-none" do %>
-          <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path("game_cover_image.jpg") %>)">
-            <%= game.name %>
-            <%= game.price %>
-          </div>
+          <% if game.photo.attached? %>
+            <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= cl_image_path game.photo.key %>)">
+              <%= game.name %>
+              <%= game.price %>
+            </div>
+          <% else %>
+            <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= asset_path("game_cover_image.jpg") %>)">
+              <%= game.name %>
+              <%= game.price %>
+              </div>
+          <% end %>
         <% end %>
       </div>
     <% end %>
