@@ -2,7 +2,11 @@ class GamesController < ApplicationController
   before_action :set_games, only: [:show, :edit, :update, :destroy]
 
   def index
-    @games = Game.all
+    if params[:query].present?
+      @games = Game.search_by_name_and_genre(params[:query])
+    else
+      @games = Game.all
+    end
   end
 
   def show
