@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid var(--border-light);
+  z-index: 4;
+}
+
+.header__inside {
+  display: grid;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.header__community {
+  grid-area: community;
+  display: flex;
+  height: 64px;
+  align-items: center;
+  min-width: 0;
+}
+
+.community__brand {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.community__brand .community__logo img {
+  max-height: 30px;
+  width: 100px;
+  display: block;
+  vertical-align: middle;
+}
