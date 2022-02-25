@@ -1,0 +1,15 @@
+.min-style-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout-item {
+  margin-top: 0px;
+  border-radius: 3px;
+}
+
+.checkout-item-img {
+  object-fit: cover;
+  width: 50vh;
+  margin-left: 5px;
+}
