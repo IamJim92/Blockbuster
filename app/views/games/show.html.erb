@@ -20,8 +20,16 @@
     <h4><%= @game.description %></h4>
     <h6>Genre: <%= @game.genre %></h6>
     <h6>Price: £<%= @game.price %></h6>
-    <a href="#" class="btn btn-primary">Buy now</a>
-    <div class="back-btn">
+
+
+    <%= form_tag orders_path do %>
+      <%= hidden_field_tag 'game_id', @game.id %>
+      <%= submit_tag 'Buy now!', class: 'btn btn-primary' %>
+    <% end %>
+    <%# <a href="#" class="btn btn-primary">Buy now</a> %>
+    <%# <div class="back-btn"> %>
     <p><%= link_to "back", games_path %></p>
+
+
   </div>
 </div>

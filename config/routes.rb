@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  resources :charges, only: [:new, :create]
+  get 'thanks', to: 'charges#thanks', as: 'thanks'
+  resources :orders, only: [:show, :create] do
+    resources :payments, only: :new
+  end
   devise_for :users
-  root to: 'pages#home'
   resources :games
+  root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
