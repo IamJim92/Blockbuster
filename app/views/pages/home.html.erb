@@ -16,7 +16,6 @@
       <%= render 'shared/search_form' %>
     </div>
   </div>
-  <%# here %>
 </div>
 
 <div class="banner d-flex justify-content-center">
@@ -31,21 +30,48 @@
   </div>
 </div>
 
-<div class="browse-box w-100">
+<%# BROWSE BOX %>
 
-  <div class="top-info d-flex justify-content-center">
-    <h1>Browse our genres</h1>
+<div class="browse-box">
+  <div class="row">
+      <div class="d-flex justify-content-center browse-box-header" data-aos="zoom-in" style="background-position: center; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path "blue-tri.jpg" %>)">
+      <h2 class="sub-header">Genres</h2>
+    </div>
   </div>
-
-  <div class="top">
+  <div class="row">
+    <div class="col-sm p-0 m-0">
+      <div class="browse-box-img w-100" data-aos="zoom-in" style="background-position: center; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path "adventure.jpg" %>)">
+        <h3 class="bb-name">adventure</h3>
+      </div>
+    </div>
+    <div class="col-sm p-0">
+      <div class="browse-box-img w-100" data-aos="zoom-in" style="background-position: center; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path "multiplayer.jpg" %>)">
+        <h3 class="bb-name">multiplayer</h3>
+      </div>
+    </div>
+    <div class="col-sm p-0">
+      <div class="browse-box-img w-100" data-aos="zoom-in" style="background-position: center; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path "horror.jpg" %>)">
+        <h3 class="bb-name">horror</h3>
+      </div>
+    </div>
   </div>
-
-  <div class="middle">
+  <div class="row">
+    <div class="col-sm p-0">
+      <div class="browse-box-img w-100" data-aos="zoom-in" style="background-position: center; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path "shooter.jpg" %>)">
+        <h3 class="bb-name">shooter</h3>
+      </div>
+    </div>
+    <div class="col-sm p-0">
+      <div class="browse-box-img w-100" data-aos="zoom-in" style="background-position: center; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path "sports.webp" %>)">
+        <h3 class="bb-name">sports</h3>
+      </div>
+    </div>
+    <div class="col-sm p-0">
+      <div class="browse-box-img w-100" data-aos="zoom-in" style="background-position: center; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path "survival.jpg" %>)">
+        <h3 class="bb-name">survival</h3>
+      </div>
+    </div>
   </div>
-
-  <div class="bot">
-  </div>
-
 </div>
 
 
