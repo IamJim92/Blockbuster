@@ -89,7 +89,6 @@ img {
 // Browse box
 .browse-box {
   margin-top: 150px;
-}
 
 .browse-box-img {
   height: 400px;
@@ -101,10 +100,9 @@ img {
 }
 
 .browse-box-img:hover {
-  background-image: linear-gradient(rgba(0,0,0,0));
+  background-image: linear-gradient(rgba(0, 0, 0, 0));
   color: rgb(22, 160, 251);
   cursor: pointer;
-
 }
 
 .browse-box-header {

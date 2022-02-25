@@ -7,11 +7,11 @@ class GamesController < ApplicationController
     else
       @games = Game.all
     end
+  end
 
-    # if @game = Game.where([params:id])
-    #   @game.user = current_user
-    #   @games.Game.all
-    # end
+  def inventory
+    @games = Game.where(user_id: current_user.id)
+    render "index"
   end
 
   def show
