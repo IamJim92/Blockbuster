@@ -1,13 +1,13 @@
 <div class="cover mb-4 d-flex align-items-center justify-content-center">
   <div class="text-center text-white">
-    <h1>View and Buy! Simple as that</h1>
+    <h1>View, buy and sell! Simple as that</h1>
   </div>
 </div>
 
 <div class="container py-5">
-  <div class="d-flex align-items-center justify-content-between mb-3">
+  <div class="d-flex align-items-center justify-content-between mb-3 p-4">
     <h3 class="mb-0" style="color:white">View inventory of games</h3>
-    <%= link_to "Create a new game", new_game_path, class: "btn btn-flat" %>
+    <%= link_to "List a new game", new_game_path, class: "btn btn-flat" %>
   </div>
   <div class="row">
     <% @games.each do |game| %>

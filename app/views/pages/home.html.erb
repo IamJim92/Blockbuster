@@ -1,7 +1,14 @@
 <div class="container">
   <div class="headers">
-    <h1 class="text-center header1">THE MODERN DAY BLOCKBUSTER</h1>
-    <h1 class="text-center header2">Want to buy?</h1>
+    <div class="homepage-logo container d-flex justify-content-center">
+      <%= image_tag "logo_design4.png", alt: "alttext", class: "logo-home"%>
+    </div>
+    <h1 class="text-center header1">BLOCKBUSTER 2.0</h1>
+    <div class="tagline">
+      <h2 class="text-center header2">Buy,</h2>
+      <h2 class="text-center header2">Sell,</h2>
+      <h2 class="text-center header2">Play!</h2>
+    </div>
   </div>
 
   <div class="container d-flex justify-content-center">
@@ -9,19 +16,38 @@
       <%= render 'shared/search_form' %>
     </div>
   </div>
+  <%# here %>
+</div>
 
-  <div class="banner container d-flex justify-content-center">
-    <%= image_tag 'games.jpg' %>
-  </div>
+<div class="banner d-flex justify-content-center">
+  <%= image_tag 'games.jpg' %>
+</div>
 
+<div class="container">
   <div class="sub-header"><h2>Top Games</h2></div>
 
   <div class="container">
     <%= render 'shared/cards(3)' %>
   </div>
+</div>
 
+<div class="browse-box w-100">
+
+  <div class="top-info d-flex justify-content-center">
+    <h1>Browse our genres</h1>
+  </div>
+
+  <div class="top">
+  </div>
+
+  <div class="middle">
+  </div>
+
+  <div class="bot">
+  </div>
 
 </div>
+
 
 <br>
 <br>
