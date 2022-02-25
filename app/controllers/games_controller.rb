@@ -7,6 +7,11 @@ class GamesController < ApplicationController
     else
       @games = Game.all
     end
+
+    # if @game = Game.where([params:id])
+    #   @game.user = current_user
+    #   @games.Game.all
+    # end
   end
 
   def show
